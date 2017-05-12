@@ -1,0 +1,10 @@
+Three Runner aimed to implement an game of type infinite runner, in which the player appears to infinitely run through constant stream of obstacles.
+
+The graphic features implemented involve the elements necessary for a basic scene in a game. In order to provide some appearance of a game, various models and textures had to be imported and mapped, directional light (of sunset color) provided from the sun, translations to simulate the player running through the game, 
+
+The main algorithm and data structure implemented have been the game state machine that runs throughout the game. The state of the game is tracked using several arrays (that can push and pop) and Javascript objects, keeping track of active models in the WebGL and the variables like the score. 
+
+The main obstacle that was encounted in the creation of this game had been the difficulty of perceiving the effects of directional light in the presence of low-poly (models with low polygon count) models. Given that low-poly models appear inherently unnatural, it was difficult to fuse the directional lights and realistic textures with the models to provide a presentable surface. This issue will probably be remediated by removing any semblance of realism from the textures and choosing simple color schemes (of few colors).
+
+The program can be run by opening the main.html in a file browser such as firefox that does not have cross-origin security lock.
+

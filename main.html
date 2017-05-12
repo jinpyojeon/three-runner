@@ -6,22 +6,29 @@
     <style>
         body {
             margin: 0;
+            align: center;
         }
         
         canvas {
-            width: 100%;
-            height: 100%
+            width: 80%;
+            height: 80%;
+        }
+        
+        #score {
+            text-align: center;
+            margin: auto;
         }
     </style>
     <script type="text/javascript" src="src/three.min.js"></script>
-    <!-- script type="text/javascript" src="src/loaders/LoadingManager.js"></script-->
-    <script type="text/javascript" src="src/loaders/OBJLoader.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script src="src/loaders/OBJLoader.js"></script>
     <script src="src/loaders/MTLLoader.js"></script>
     <script src="src/loaders/DDSLoader.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
-</body>
+    <div class="center">
+        <h1 id="score">0</h1>
+    </div>
 
 </html>
